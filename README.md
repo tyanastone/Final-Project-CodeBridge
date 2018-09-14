@@ -2,7 +2,7 @@
 
 This is my final project for the CodeBridge course for Web Development Immersive. 
 
-Requirements/Rubric for this Project:
+# Requirements/Rubric for this Project:
 
 Assignment: Final Project : The Consulting Project
 
@@ -88,5 +88,5 @@ No wireframe. Its like building a house with no blueprint! Measure twice, cut on
 No folder structure! If your folder structure isn't correct, you WILL get a 0. See slide deck 2.1 if your forgot.
 Plagiarism! Perscholas & General Assembly has a strict NO PLAGIARISM policy! We will find out.
  
-<a href="https://www.google.com">Click Here</a>
+<a href="https://perscholas.instructure.com/courses/57/assignments/2384">Click Here</a>
 Happy Coding!
