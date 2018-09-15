@@ -21,6 +21,7 @@
     grid-area: 2/1;
     height: 600px;
     border: solid;
+
 }
 .content1 {
     grid-area: 2/2;
@@ -32,4 +33,45 @@
     grid-area: 4/1;
     border: solid;
     grid-column: span 5;
+}
+body{
+    font-family: fantasy;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.5s
+}
+.overlayContent{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 10px;
+    color: #ccc;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+}
+.overlay a:hover {
+    color: #fff;
+}
+.overlay .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 50px;
+
+}
+.openBtn{
+    position: fixed;
 }
