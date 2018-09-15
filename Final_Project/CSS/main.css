@@ -1,8 +1,10 @@
+/* created a block for all div's inside of container */
 .container1 > div {
     /* border: solid; */
     /* height: 800px;
     width:800px;   */
 }
+/* container div to use grid to format all pages */
 .container1 {
     display: grid;
     grid-template-columns: repeat(6,300px);
@@ -12,30 +14,63 @@
     width: 800px;
    
 }
+/* aligned header div and stretched out using span */
 .header1 {
     grid-area: 1/1;
     grid-column: span 5;
     border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* styled div for menu icon */
 .menu1 {
     grid-area: 2/1;
     height: 600px;
     border: solid;
 
 }
+/* styled div for content */
 .content1 {
     grid-area: 2/2;
     height: 600px;
     border: solid;
     grid-column: span 4;
 }
+/* styled div for footer */
 .footer1 {
     grid-area: 4/1;
     border: solid;
     grid-column: span 5;
 }
+/* made span letters bigger and added color */
+span{
+    font-size: 30px;
+    
+}
+/* assigned text for full site */
 body{
     font-family: fantasy;
+}
+/* adjusted target icon */
+.targetIcon{
+    height: 200px;
+    width: 200px;
+}
+/* adjusted walmart icon */
+.walmartIcon{
+    height: 200px;
+    width: 200px;
+}
+/* adjusted publix icon */
+.publixIcon{
+    height: 200px;
+    width: 350px;
+}
+/* adjusted kroger icon */
+.krogerIcon{
+    height: 200px;
+    width: 200px;
 }
 .overlay{
     position: fixed;
@@ -72,6 +107,7 @@ body{
     font-size: 50px;
 
 }
+/* fixed menu icon to stay fixed on the whole page */
 .openBtn{
     position: fixed;
 }
