@@ -8,7 +8,7 @@
 .container1 {
     display: grid;
     grid-template-columns: repeat(6,300px);
-    grid-template-rows: repeat(4,300px);
+    grid-template-rows: repeat(6,300px);
     grid-gap: 10px;
     height: 800px;
     width: 800px;
@@ -19,38 +19,71 @@
     grid-area: 1/1;
     grid-column: span 5;
     border: solid;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */
+    /* background-image: url('../Images/ladyshopping_2_27.png');
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover;  */
 }
-/* styled div for menu icon */
+.shopping{
+    width: 50%;
+    margin-bottom: 100px;
+   
+}
+/* changed font-size of title */
+.title{
+    font-size: 50px;
+   
+}
+/*styled div for menu icon*/
+
 .menu1 {
-    grid-area: 2/1;
+    grid-area: 3/1;
     height: 600px;
     border: solid;
 
 }
 /* styled div for content */
 .content1 {
-    grid-area: 2/2;
+    grid-area: 3/2;
     height: 600px;
     border: solid;
     grid-column: span 4;
+    
+}
+/* changed height and width of my personal photo */
+.myPicture{
+    height: 200px;
+    width: 200px;
+    /* border: solid black; */
+    padding: 20px;
+}
+.contentPolicies{
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 /* styled div for footer */
 .footer1 {
-    grid-area: 4/1;
+    grid-area: 6/1;
     border: solid;
     grid-column: span 5;
 }
 /* made span letters bigger and added color */
 span{
-    font-size: 30px;
+    font-size: 80px;
     
 }
-/* assigned text for full site */
+/* assigned text for full site and background-color */
 body{
     font-family: fantasy;
+    background-color: orange;
 }
 /* adjusted target icon */
 .targetIcon{
@@ -110,4 +143,13 @@ body{
 /* fixed menu icon to stay fixed on the whole page */
 .openBtn{
     position: fixed;
+}
+/* content div for coupon database */
+.content2 {
+    grid-area: 3/2;
+    height: 900px;
+    border: solid;
+    grid-column: span 4;
+    background-color: rgba(0,0,0,.1);
+   
 }
