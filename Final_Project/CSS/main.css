@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: whitesmoke; */
     
     /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */
     /* background-image: url('../Images/ladyshopping_2_27.png');
@@ -33,11 +34,19 @@
 .shopping{
     width: 50%;
     margin-bottom: 100px;
+    
+    /* height: 350px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px; */
    
 }
 /* changed font-size of title */
 .title{
     font-size: 50px;
+    /* position: absolute; */
    
 }
 /*styled div for menu icon*/
@@ -62,6 +71,7 @@
     width: 200px;
     /* border: solid black; */
     padding: 20px;
+   border-radius: 20%;
 }
 .contentPolicies{
     background-color: rgba(0,0,0,.1);
@@ -83,12 +93,17 @@ span{
 /* assigned text for full site and background-color */
 body{
     font-family: fantasy;
-    background-color: orange;
+    background-image: url('../Images/bg3.jpg');
 }
 /* adjusted target icon */
 .targetIcon{
     height: 200px;
     width: 200px;
+    
+}
+.targetIcon:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
+  
 }
 /* adjusted walmart icon */
 .walmartIcon{
@@ -153,3 +168,23 @@ body{
     background-color: rgba(0,0,0,.1);
    
 }
+/* adjusted span lingo words */
+.lingo{
+    font-size: 30px;
+}
+.contentContact {
+    grid-area: 3/2;
+    height: 600px;
+    border: solid;
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+} 
+.contact{
+    width: 300px;
+}
+.message{
+    height: 300px;
+}
+

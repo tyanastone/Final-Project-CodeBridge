@@ -4,3 +4,8 @@ function openNav() {
 function closeNav() {
     document.getElementById('nav').style.width = "0%";
 }
+
+
+
+
+
