@@ -15,7 +15,8 @@
          <!--created title-->
          <div class="title"><span>K</span>razy <span>K</span>oupon <span>Q</span>ueen</div>
          <!-- /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */ -->
-         <img src="../Images/ladyshopping_2_27.png" class="shopping" alt="shopping logo">
+         <img src="../Images/ladyshopping_33.png" class="shopping" alt="shopping logo" height="50%" width="120%">
+         
     </div>
     <!-- created menu div -->
     <div class="menu1">menu
@@ -46,27 +47,56 @@
                     <img src="../Images/menu-button-of-three-horizontal-lines (1).png" class= "openBtn" onclick="openNav()" alt="Menu Button">
     </div>   
     <!-- created content div -->
-    <div class="content1">
-           
+    <div class="content1 contentBrags">
+        <div id="titleBrags">Brags</div>  
+        <div id="bragsInstructions">
+            Come here to post and brag about your latest hauls!
+        </div> 
+        
             <div class="nested">
-                <p>
-                    <img src="../Images/allcerealdeal.jpg" alt="" class="cereal" width="50%">
+                <p id="allCereal">
+                    <!-- image from facebook.com -->
+                    <img src="../Images/allcerealdeal.jpg" alt="haul 1"  class="cereal" width="50%">
                     <br>
-                    "I got my deal! All this for $7.30. There is a $2 off 4 Kellogg’s in Checkout 51 that just went through. Also, Fetch will give you 1000 pts ($1) for the receipt today!"
+                    
+                    "I got my deal! All this for $7.30. There is a $2 off 4 Kellogg’s in Checkout 51 that just went through. Also, Fetch will give you 1000 pts ($1) for the receipt today!"  
+                    <br>
+                    ~ Natalie R. from California     
                 </p>
-                <p>
-                        2
+
+                <p id="haul2">
+                    <!-- image from facebook.com -->
+                        <img src="../Images/haul1.jpg" alt="haul 2" class="haul" width="50%">
+                        <br>
+                       "My first coupon haul 😍 hope to do better next time 😏😉👍🏻"
+                       <br>
+                       ~ Daniel F. from Wyoming
+                      
+                        
                     </p>
-                    <p>
-                            3
+                    <p id="haul3">
+                    <!-- image from facebook.com -->
+                            <img src="../Images/haul2.jpg" alt="haul 3" class="freeHaul" width="50%" height="100%">
+                            <br>          
+                        "My latest haul!!! Freeeeeee"
+                        <br>
+                        ~ Laura G from Atlanta
                         </p>
-                        <p>
-                                4
+                        <p id="haul4">
+                    <!-- image from facebook.com -->
+                                <img src="../Images/haul4.jpg" alt="haul 4" class="fdhaul" width="50%">
+                                <br> 
+                                "My Haul for Today. My OOP was $2.86. FD and DG.💃💃"
+                                <br>
+                                ~ Catherine L. from Virginia
                             </p>
+                           
+                            
+
             </div>
             <!-- added upload form -->
             <form action="http://jkorpela.fi/cgi-bin/echo.cgi"
-            enctype="multipart/form-data" method="post">
+            enctype="multipart/form-data" method="post" id="form2">
             <p>
             Type some text (if you like):<br>
             <input type="text" name="textline" size="30">
