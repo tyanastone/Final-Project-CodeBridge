@@ -60,7 +60,7 @@
     width: 200px;
     /* border: solid black; */
     padding: 20px;
-   border-radius: 20%;
+   border-radius: 50%;
 }
 /* adjusted content div of policies */
 .contentPolicies{
@@ -69,10 +69,11 @@
     justify-content: space-around;
     align-items: center;
 }
-/* FIXME: tried to center policy description */
+ /* centered policy description and brought it to the top*/
 #policyDescription{
-    margin-top: -400px;
-    margin-left: 100px;
+     margin-top: -200px; 
+     font-size: 30px;
+    position: absolute;
 }
 /* styled div for footer */
 .footer1 {
@@ -88,6 +89,7 @@
     border-radius: 25px;
      
 }
+/* decorated list items with circle bullets */
 ul {
     list-style-type: circle;
 }
@@ -110,8 +112,8 @@ body{
 .k {
     color: red;
 }
-/* adjusted target icon */
-.targetIcon{
+/* adjusted store icons */
+.targetIcon, .walmartIcon, .krogerIcon{
     height: 200px;
     width: 200px;
     
@@ -121,11 +123,6 @@ body{
     box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
   
 }
-/* adjusted walmart icon */
-.walmartIcon{
-    height: 200px;
-    width: 200px;
-}
 
 /* adjusted publix icon */
 .publixIcon{
@@ -133,11 +130,6 @@ body{
     width: 350px;
 }
 
-/* adjusted kroger icon */
-.krogerIcon{
-    height: 200px;
-    width: 200px;   
-}
 
 /* TODO: */
 .overlay{
@@ -169,7 +161,7 @@ body{
 }
 /* TODO: */
 .overlay a:hover {
-    color: #fff;
+    color: red;
 }
 /* TODO: */
 .overlay .closeBtn {
@@ -182,6 +174,11 @@ body{
 /* fixed menu icon to stay fixed on the whole page */
 .openBtn{
     position: fixed;
+    
+}
+/* added hover to menu button */
+.openBtn:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
 }
 /* content div for coupon database */
 .content2 {
@@ -215,9 +212,15 @@ FIXME:
 .contactTitle{
    
 }
+/* FIXME: fix title of form */
+.contactTitle2{
+    margin: 100px;
+}
+
 /* adjusted message field */
-.message{
-    height: 300px;
+#message{
+    height: 200px;
+    width: 200px;
 }
 /* took bullet points off */
 .resourceList {
@@ -232,12 +235,16 @@ FIXME:
   
 }
 /* aligned deal images to center */
-.tideGain, .batteries, .allCereal2, .tideText, .titleDeals {
+.tideGain, .batteries, .allCereal2, .tideText, .titleDeals, .colgate {
     display: flex;
     justify-content: center;
-    margin: 0 100px;
+    margin: 0 150px;
     
 }
+input[type='checkbox'] { 
+    
+}  
+/* added a footer to resources page */
 .footerResources{
     grid-area: 6/1; 
 }
@@ -257,6 +264,7 @@ FIXME:
 .contentBrags {
     overflow: scroll;
 }
+/* TODO: look up cubic bezeir */
 /* created animation for title coming in */
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -314,6 +322,15 @@ FIXME:
       height: 50%;
       width: 50%;
   }
+  .haul6 {
+      height: 50%;
+      width: 90%;
+  }
+  .haul7{
+      height: 250px;
+      width: 70%;
+  }
+  
 /* styled modal, gave it opacity and positioned it to front and gave it a top 0 so that it's in front and not flowing within the document, used flex to center it into page  */
   .bg-modal {
       width: 100%;
@@ -374,6 +391,23 @@ FIXME:
   .resourceThree:hover{
     color: #0FBCF1;
 }
+/* aligned my picture to center of page */
+/* #myPicture2 {
+    position: absolute;
+    bottom: -70%;
+    left: 50%;
+    
+} */
+/* aligned the title of my about page to center */
+/* #aboutTitle{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+} */
+/* #aboutDescription{
+    position: fixed;
+    bottom: 20%;
+} */ 
 
 
 
