@@ -13,9 +13,9 @@
     <!-- created header div -->
     <div class="header1">
          <!--created title-->
-         <div class="title"><span>K</span>razy <span>K</span>oupon <span>Q</span>ueen</div>
+         <div class="title"><span>K</span>razy <span class="k">K</span>oupon <span>Q</span>ueen</div>
          <!-- /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */ -->
-         <img src="../Images/ladyshopping_33.png" class="shopping" alt="shopping logo" height="50%" width="120%">
+         <img src="../Images/ladyshopping_33.png" class="shopping" alt="shopping logo">
     </div>
     <!-- created menu div -->
     <div class="menu1">menu
@@ -61,17 +61,27 @@
             <br>
             <input type="text" class="contact message" placeholder="Message">
             <br>
-            <input type="button" value="Submit" onclick="contactForm()">
+            <!-- <a href="#" id="button" class="button">Submit</a> -->
+            <input type="button" value="Submit" id="button">
             
             
         </form>
     </div>
     <!-- created footer div -->
-    <div class="footer1">footer</div>
+    <div class="footer1">
+            <h2 id="footer"> &copy; Krazy Koupon Queen. All rights reserved.</h2>
+    </div>
     
 </div>
-
-
+<!-- created modal -->
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="close">+</div>
+        <!-- picture from https://dribbble.com/shots/2383608-Uploading -->
+        <img src="../Images/upload2.gif" class="upload" alt="uploading image">
+        <div class="modalText">Message Sent</div>
+    </div>
+</div>
 
 
  <script src="../app.js"></script>   
