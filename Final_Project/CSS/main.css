@@ -108,6 +108,7 @@ body{
     font-family: fantasy;
     background-image: url('../Images/dark-grey-terrazzo.png');
 }
+
 /* added color to spanned letters */
 .k {
     color: red;
@@ -241,9 +242,7 @@ FIXME:
     margin: 0 150px;
     
 }
-input[type='checkbox'] { 
-    
-}  
+
 /* added a footer to resources page */
 .footerResources{
     grid-area: 6/1; 
@@ -308,8 +307,16 @@ input[type='checkbox'] {
   }
   /* aligned text */
 
-  #lingoTitle, #couponDescription, #Guide, #footer, #beginnerDescription {
+  #lingoTitle, #couponDescription, #Guide, #footer, #beginnerDescription, #titleBrags, #bragsInstructions, #allCereal, #haul2, #haul3, #haul4, #haul6, #haul7, #form2 {
       text-align: center;
+  }
+  /* adjusted font size */
+  #titleBrags{
+      font-size: 60px;
+  }
+  /* adjusted font-size */
+  #bragsInstructions{
+      font-size: 20px;
   }
 
 /* pushed image to center */
@@ -320,7 +327,8 @@ input[type='checkbox'] {
 /* created height and width for haul images so that they aren't taking up so much space and fit in their respective grid */
 .freeHaul, .cereal, .haul, .fdHaul {
       height: 50%;
-      width: 50%;
+      width: 80%;
+     align-content: center;
   }
   .haul6 {
       height: 50%;
@@ -381,34 +389,23 @@ input[type='checkbox'] {
  @keyframes sent {
     to   { visibility: visible; }
   }
+  /* took bullet points off of resources and made text black */
   .resourceTwo, .resourceThree {
       text-decoration: none;
       color: black;
   }
+  /* changed color on hover for resources */
   .resourceTwo:hover{
       color: red;
   }
+  /* changed color for resources */
   .resourceThree:hover{
     color: #0FBCF1;
 }
-/* aligned my picture to center of page */
-/* #myPicture2 {
-    position: absolute;
-    bottom: -70%;
-    left: 50%;
-    
-} */
-/* aligned the title of my about page to center */
-/* #aboutTitle{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-} */
-/* #aboutDescription{
-    position: fixed;
-    bottom: 20%;
-} */ 
-
+/* centered resource text */
+#titleResource{
+    text-align: center;
+}
 
 
  
