@@ -24,7 +24,10 @@ In this assignment you will act as a consultant to an entity who wants to promot
 <a href="https://www.facebook.com/groups/krogercouponing1/">Kroger Couponing</a>
 <br>
 <a href="https://www.facebook.com/groups/365887460516882/">Couponing at Walmart</a>
+<br>
 <a href="https://www.facebook.com/groups/369288343486552/">Dollar General Couponing #2</a>
+<br>
 <a href="https://www.krogerkrazy.com/">Kroger Krazy Website</a>
+<br>
 <a href="https://www.mycouponingbuddy.com/">My Couponing Buddy</a>
 
