@@ -19,3 +19,11 @@ In this assignment you will act as a consultant to an entity who wants to promot
 
 <a href="https://gallant-leakey-fb752f.netlify.com/">Click here for bitballoon</a>
 
+### Extra Resources
+
+<a href="https://www.facebook.com/groups/krogercouponing1/">Kroger Couponing</a>
+<a href="https://www.facebook.com/groups/365887460516882/">Couponing at Walmart</a>
+<a href="https://www.facebook.com/groups/369288343486552/">Dollar General Couponing #2</a>
+<a href="https://www.krogerkrazy.com/">Kroger Krazy Website</a>
+<a href="https://www.mycouponingbuddy.com/">My Couponing Buddy</a>
+
