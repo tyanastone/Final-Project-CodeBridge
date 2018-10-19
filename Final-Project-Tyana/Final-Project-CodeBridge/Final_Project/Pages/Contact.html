@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- created container for website -->
+<div class="container1">
+    <!-- created header div -->
+    <div class="header1">
+         <!--created title-->
+         <div class="title"><span>K</span>razy <span class="k">K</span>oupon <span>Q</span>ueen</div>
+         <!-- /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */ -->
+         <img src="../Images/ladyshopping_33.png" class="shopping" alt="shopping logo">
+    </div>
+    <!-- created menu div -->
+    <div class="menu1">
+            <div id="nav" class="overlay">
+                    <a href="" class="closeBtn" onclick="closeNav()">&times;</a>
+                    <div class="overlayContent">
+                        <!-- created table for all pages, and linked them all to their respective pages -->
+                        <table>
+                            <tr>
+                        <th><a href="../index.html">Home</a></th>
+                        <td><a href="../Pages/Lingo.html">Coupon Lingo</a></td>
+                        <td><a href="../Pages/Beginners.html">Beginners Guide</a></td>
+                        <td><a href="../Pages/Policies.html">Store Policies</a></td>
+                    </tr>
+                    <tr>
+                        <th><a href="../Pages/Database.html">Coupon Database</a></th>
+                       <td> <a href="../Pages/Deals.html">Deals</a></td>
+                        <td><a href="../Pages/Brags.html">Bragging Rights</a></td>
+                        <td><a href="../Pages/Resources.html">Resources</a></td>
+                        <td><a href="../Pages/Contact.html">Contact Me</a></td>
+                    </tr>
+                    </table>
+                    </div>
+                </div>
+                    <!-- <a href="#" class="openBtn" onclick="openNav()">Open Nav</a> -->
+                   <!-- used menu icon to create menu button, added function to the icon so the menu modal will show -->
+                    <!-- Icon made by Freepik from www.flaticon.com  -->
+                    <img src="../Images/menu (1).png" class= "openBtn" onclick="openNav()" alt="Menu Button">
+    </div>   
+    <!-- created content div -->
+    <div class="contentContact">
+       <!-- created title for content -->
+  
+      <div id="contactTitle">Contact Me</div>
+    
+        <br>
+        <br>
+        <!-- created form -->
+        <form action="form">
+       <p>
+           <!-- used onblur to execute javascript when a user leaves an input field -->
+            <input type="text" id="uname" onblur="validate()" placeholder="Name"> <div id="div1"></div> 
+            
+        </p>
+        <p>
+            <input type="text" onblur="validate()" id="Email" placeholder="Email"> <div id="div2"></div> 
+            
+        </p> 
+        <p>
+                <input type="tel" onblur="validate()" id="pattern" placeholder="Phone Number" required> <div id="div4"></div>
+            
+          
+        </p>
+        <p>
+                <input type="text" onblur="validate()" id="message" placeholder="Message"> <div id="div3"></div>
+           
+        </p>
+             <button><a href="#" id="button" class="button">Submit</a></button>
+            </form> 
+            
+            
+    </div>
+    <!-- created footer div -->
+    <div class="footer1">
+            <h2 id="footer"> &copy; Krazy Koupon Queen. All rights reserved.</h2>
+    </div>
+    
+</div>
+<!-- created modal -->
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="close">+</div>
+        <!-- picture from https://dribbble.com/shots/2383608-Uploading -->
+        <img src="../Images/upload2.gif" class="upload" alt="uploading image">
+        <div class="modalText">Message Sent</div>
+    </div>
+</div>
+
+
+ <script src="../app.js"></script>   
+</body>
+</html>

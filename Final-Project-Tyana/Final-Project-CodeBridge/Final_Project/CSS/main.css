@@ -1,0 +1,425 @@
+
+/* container div to use grid to format all pages */
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(6,300px);
+    grid-template-rows: repeat(6,300px);
+    grid-gap: 10px;
+    height: 800px;
+    width: 800px;
+    
+}
+/* aligned header div and stretched out using span */
+.header1 {
+    grid-area: 1/1;
+    grid-column: span 5;
+    border: solid;
+    height: 500px;
+    display: flex;
+    justify-content: center;   
+    /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */
+    background-image: url('../Images/ladyshopping_33.png');   
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+}
+/* adjusted logo image in header */
+.shopping{
+   position: absolute;
+   margin-top: 10%;
+   height: 50%;
+   width: 120%;
+  
+}
+/* changed font-size of title */
+.title{
+    font-size: 50px;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+   
+}
+/*styled div for menu icon*/
+
+.menu1 {
+    grid-area: 3/1;
+    height: 600px;
+    border: solid;
+
+}
+/* styled div for content */
+.content1 {
+    grid-area: 3/2;
+    height: 600px;
+    border: solid;
+    grid-column: span 4;
+    overflow: scroll;
+    
+    
+}
+/* changed height and width of my personal photo */
+.myPicture{
+    height: 200px;
+    width: 200px;
+    /* border: solid black; */
+    padding: 20px;
+   border-radius: 50%;
+}
+/* adjusted content div of policies */
+.contentPolicies{
+    background-color: rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ /* centered policy description and brought it to the top*/
+#policyDescription{
+     margin-top: -200px; 
+     font-size: 30px;
+    position: absolute;
+}
+/* styled div for footer */
+.footer1 {
+    grid-area: 5/1;
+    border: solid;
+    grid-column: span 5;
+    height: 50%;
+    
+}
+/* added background image for these divs */
+.header1, .menu1, .content1, .footer1, .content2, .contentContact {
+    background-image: url('../Images/full-bloom.png');
+    border-radius: 25px;
+     
+}
+/* decorated list items with circle bullets */
+ul {
+    list-style-type: circle;
+}
+/* made span letters bigger and added color */
+span{
+    font-size: 80px;
+    color: #0FBCF1;
+    
+}
+/* colored all even spans */
+.even {
+    color: red;
+}
+/* assigned text for full site and background-color */
+body{
+    font-family: fantasy;
+    background-image: url('../Images//dark-grey-terrazzo.png');
+}
+
+/* added color to spanned letters */
+.k {
+    color: red;
+}
+/* adjusted store icons */
+.targetIcon, .walmartIcon, .krogerIcon{
+    height: 200px;
+    width: 200px;
+    
+}
+/* created box shadow on hover */
+.targetIcon:hover, .walmartIcon:hover, .publixIcon:hover, .krogerIcon:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
+  
+}
+
+/* adjusted publix icon */
+.publixIcon{
+    height: 200px;
+    width: 350px;
+}
+
+
+/* TODO: had overlay hidden with opaque background, used transition of .5 seconds for opening*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    overflow-x: hidden;
+    z-index: 5;
+    transition: all 0.5s
+}
+/* TODO: positioned the container towards the back*/
+.overlayContent{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+/* TODO: adjusted text spacing, color, no underline, and alignment inside of overlay*/
+.overlay a {
+    padding: 10px;
+    color: #ccc;
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+}
+/* TODO: changed the letters to hover red in overlay*/
+.overlay a:hover {
+    color: red;
+}
+/* TODO: positioned the closed button to be on the top right */
+.overlay .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 50px;
+
+}
+/* fixed menu icon to stay fixed on the whole page */
+.openBtn{
+    position: fixed;
+    
+}
+/* added hover to menu button */
+.openBtn:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,.1);
+}
+/* content div for coupon database */
+.content2 {
+    grid-area: 3/2;
+    height: 600px;
+    border: solid;
+    grid-column: span 4;
+    background-color: rgba(0,0,0,.1);
+    overflow: scroll;
+   
+}
+/* adjusted span lingo words */
+.lingo{
+    font-size: 30px;
+}
+/* adjusted contact form */
+.contentContact {
+    grid-area: 3/2;
+    height: 600px;
+    border: solid;
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+} 
+/* adjusted input fields */
+.contact{
+    width: 300px;
+}
+FIXME: 
+#contactTitle{
+    position: absolute;
+   margin: -4px;
+   top: 100px;
+}
+/* FIXME: fix title of form */
+.contactTitle2{
+    margin: 100px;
+}
+/* took underline off of button */
+.button {
+    text-decoration: none;
+    
+}
+/* adjusted message field */
+#message{
+    height: 200px;
+    width: 200px;
+}
+/* took bullet points off */
+.resourceList {
+    list-style-type: none;
+}
+/* aligned images and text to center and added scroll */
+.contentDeals{
+    display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  
+  
+}
+/* aligned deal images to center */
+.tideGain, .batteries, .allCereal2, .tideText, .titleDeals, .colgate {
+    display: flex;
+    justify-content: center;
+    margin: 0 150px;
+    
+}
+
+/* added a footer to resources page */
+.footerResources{
+    grid-area: 6/1; 
+}
+  /* created grid inside of grid */
+  .nested{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+  }
+  /* styled grid inside of grid */
+  .nested p {
+      border: 1px solid white;
+      padding: 20px;
+      margin: 0;
+  }
+  /* added scroll to content section of brags page */
+.contentBrags {
+    overflow: scroll;
+}
+
+/* created animation for title coming in */
+/* definition from https://www.w3schools.com/cssref/func_cubic-bezier.asp */
+/* The cubic-bezier() function defines a Cubic Bezier curve.
+
+A Cubic Bezier curve is defined by four points P0, P1, P2, and P3. P0 and P3 are the start and the end of the curve and, in CSS these points are fixed as the coordinates are ratios. P0 is (0, 0) and represents the initial time and the initial state, P3 is (1, 1) and represents the final time and the final state. */
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* used animation from animista.com */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-9-18 13:44:28
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* aligned text */
+
+  #lingoTitle, #couponDescription, #Guide, #footer, #beginnerDescription, #titleBrags, #bragsInstructions, #allCereal, #haul2, #haul3, #haul4, #haul6, #haul7, #form2 {
+      text-align: center;
+  }
+  /* adjusted font size */
+  #titleBrags{
+      font-size: 60px;
+  }
+  /* adjusted font-size */
+  #bragsInstructions{
+      font-size: 20px;
+  }
+
+/* pushed image to center */
+  #allCereal2{
+      margin: 100px;
+      
+  }
+/* created height and width for haul images so that they aren't taking up so much space and fit in their respective grid */
+.freeHaul, .cereal, .haul, .fdHaul {
+      height: 50%;
+      width: 80%;
+     align-content: center;
+  }
+  .haul6 {
+      height: 50%;
+      width: 90%;
+  }
+  .haul7{
+      height: 250px;
+      width: 70%;
+  }
+  
+/* styled modal, gave it opacity and positioned it to front and gave it a top 0 so that it's in front and not flowing within the document, used flex to center it into page  */
+  .bg-modal {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+  }
+  /* created modal content area, made it relative to go in the back, changed background color and height and width */
+ .modal-content{
+     width: 500px;
+     height: 300px;
+     background-color: white;
+     border-radius: 4px;
+     position: relative;
+
+ }
+ /* styled upload gif */
+.upload {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    padding: 40px; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* aligned text to center of modal, created animation so text would show up later */
+ .modalText{
+     text-align: center;
+     animation: sent 0s 5s forwards;
+     visibility: hidden;
+ }
+/* styled close button, used a plus sign and rotated it to an x position */
+ .close{
+     position: absolute;
+     top: 0;
+     right: 14px;
+     font-size: 42px;
+     transform: rotate(45deg);
+     cursor: pointer;
+ }
+ /* animation for text inside of modal */
+ @keyframes sent {
+    to   { visibility: visible; }
+  }
+  /* took bullet points off of resources and made text black */
+  .resourceTwo, .resourceThree {
+      text-decoration: none;
+      color: black;
+  }
+  /* changed color on hover for resources */
+  .resourceTwo:hover{
+      color: red;
+  }
+  /* changed color for resources */
+  .resourceThree:hover{
+    color: #0FBCF1;
+}
+/* centered resource text */
+#titleResource{
+    text-align: center;
+}
+
+
+ 
+  
+
+
+
