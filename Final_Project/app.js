@@ -1,4 +1,4 @@
-console.log('testing commit')
+
 
 // created function to open nav bar
 function openNav() {
