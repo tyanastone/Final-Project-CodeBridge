@@ -13,12 +13,13 @@
     <!-- created header div -->
     <div class="header1">
          <!--created title-->
-         <div class="title"><span>K</span>razy <span>K</span>oupon <span>Q</span>ueen</div>
+         <div class="title"><span>K</span>razy <span class="k">K</span>oupon <span>Q</span>ueen</div>
          <!-- /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */ -->
-         <img src="../Images/ladyshopping_2_27.png" class="shopping" alt="shopping logo">
+         <img src="../Images/ladyshopping_33.png" class="shopping" alt="shopping logo">
+         
     </div>
     <!-- created menu div -->
-    <div class="menu1">menu
+    <div class="menu1">
             <div id="nav" class="overlay">
                     <a href="" class="closeBtn" onclick="closeNav()">&times;</a>
                     <div class="overlayContent">
@@ -43,30 +44,83 @@
                     <!-- <a href="#" class="openBtn" onclick="openNav()">Open Nav</a> -->
                    <!-- used menu icon to create menu button, added function to the icon so the menu modal will show -->
                     <!-- Icon made by Freepik from www.flaticon.com  -->
-                    <img src="../Images/menu-button-of-three-horizontal-lines (1).png" class= "openBtn" onclick="openNav()" alt="Menu Button">
+                    <img src="../Images/menu (1).png" class= "openBtn" onclick="openNav()" alt="Menu Button">
     </div>   
     <!-- created content div -->
-    <div class="content1">
-           
+    <div class="content1 contentBrags">
+        <div id="titleBrags">Brags</div>  
+        <div id="bragsInstructions">
+            Come here to post and brag about your latest hauls!
+        </div> 
+        
             <div class="nested">
-                <p>
-                    <img src="../Images/allcerealdeal.jpg" alt="" class="cereal" width="50%">
+                <p id="allCereal">
+                    <!-- image from facebook.com -->
+                    <img src="../Images/allcerealdeal.jpg" id="deal" alt="haul 1"  class="cereal" >
                     <br>
-                    "I got my deal! All this for $7.30. There is a $2 off 4 Kellogg’s in Checkout 51 that just went through. Also, Fetch will give you 1000 pts ($1) for the receipt today!"
+                    
+                    "I got my deal! All this for $7.30. There is a $2 off 4 Kellogg’s in Checkout 51 that just went through. Also, Fetch will give you 1000 pts ($1) for the receipt today!"  
+                    <br>
+                    ~ Natalie R. from California     
                 </p>
-                <p>
-                        2
+
+                <p id="haul2">
+                    <!-- image from my personal phone -->
+                        <img src="../Images/myhaul.jpg" alt="haul 2" class="haul">
+                        <br>
+                       "My first coupon haul 😍 hope to do better next time 😏😉👍🏻 Total OOP: $13.18"
+                       <br>
+                       ~ Tyana S. from Atlanta
+                      
+                        
                     </p>
-                    <p>
-                            3
+                    <p id="haul3">
+                    <!-- image from facebook.com -->
+                            <img src="../Images/haul2.jpg" alt="haul 3" class="freeHaul">
+                            <br>          
+                        "My latest haul!!! Freeeeeee"
+                        <br>
+                        ~ Laura G from Wyoming
                         </p>
-                        <p>
-                                4
+                        <p id="haul4">
+                    <!-- image from facebook.com -->
+                                <img src="../Images/haul4.jpg" alt="haul 4" class="fdHaul">
+                                <br> 
+                                "My Haul for Today. My OOP was $2.86. FD and DG.💃💃"
+                                <br>
+                                ~ Catherine L. from Virginia
                             </p>
+                            <p id="haul6">
+                                    <!-- image from https://www.facebook.com/search/top/?q=haul -->
+                                                <img src="../Images/haul6.jpg" alt="haul 6" class="haul6">
+                                                <br> 
+                                                "My FD Gain haul today. Ok here in Greenville NC they are discontinuing some gain sizes so they were on the clearance rank all except the gain liquid detergent... 4 different transactions. 3 transactions were 3.49 and the other was 4/tax depending on the store. Tide pods $3 use $2/1 Mq..glade candles were on clearance 1.25 had $1/2 Dq. Total OOP $19/tax"
+                                                <br>
+                                                ~ Toya G. from North Carolina
+                                            </p>
+                                            <p id="haul7">
+                                                    <!-- image from https://www.facebook.com/search/str/haul/keywords_search?filters_rp_group=%7B%22name%22%3A%22my_groups_posts%22%2C%22args%22%3A%22%22%7D -->
+                                                                <img src="../Images/haul7.jpg" alt="haul 7" class="haul7">
+                                                                <br> 
+                                                                "So here’s my hubby’s haul from today! I had to work and was afraid they would be sold out so asked if he would get some free Kotex for me. So he sends me the first pic. Then he goes... “oh wait! Forgot 3 bags in the car” and sent a pic of him carrying them in the house and then built new tampon towers. I’m dying 😂😂😂 He’s so proud 
+                                                                BD: Store is Publix (multiple transactions at multiple stores, so no shelves were cleared)
+                                                                On sale for $2/6
+                                                                Use 1 Publix q $3/2
+                                                                Use 1 manufacturer q $3/2
+                                                                Total FREEEEEE
+                                                                DEAL ENDS TOMORROW SO GO GET THEM LADIES!!!"
+                                                                <br>
+                                                                ~ Nikki E. from North Carolina
+                                                            </p>
+                           
+                            
+
             </div>
             <!-- added upload form -->
+            <!-- the enctype attribute means how the form data should be encoded when submitting to the server -->
+            <!-- used the post method to appen the form-data inside the body so the data won't be shown in the url -->
             <form action="http://jkorpela.fi/cgi-bin/echo.cgi"
-            enctype="multipart/form-data" method="post">
+            enctype="multipart/form-data" method="post" id="form2">
             <p>
             Type some text (if you like):<br>
             <input type="text" name="textline" size="30">
@@ -81,7 +135,9 @@
             </form>
     </div>
     <!-- created footer div -->
-    <div class="footer1">footer</div>
+    <div class="footer1">
+            <h2 id="footer"> &copy; Krazy Koupon Queen. All rights reserved.</h2>
+    </div>
     
 </div>
 

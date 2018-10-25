@@ -13,12 +13,12 @@
     <!-- created header div -->
     <div class="header1">
          <!--created title-->
-         <div class="title"><span>K</span>razy <span>K</span>oupon <span>Q</span>ueen</div>
+         <div class="title"><span>K</span>razy <span class="k">K</span>oupon <span>Q</span>ueen</div>
          <!-- /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */ -->
-         <img src="../Images/ladyshopping_2_27.png" class="shopping" alt="shopping logo">
+         <img src="../Images/ladyshopping_33.png" class="shopping" alt="shopping logo">
     </div>
     <!-- created menu div -->
-    <div class="menu1">menu
+    <div class="menu1">
             <div id="nav" class="overlay">
                     <a href="" class="closeBtn" onclick="closeNav()">&times;</a>
                     <div class="overlayContent">
@@ -43,35 +43,56 @@
                     <!-- <a href="#" class="openBtn" onclick="openNav()">Open Nav</a> -->
                    <!-- used menu icon to create menu button, added function to the icon so the menu modal will show -->
                     <!-- Icon made by Freepik from www.flaticon.com  -->
-                    <img src="../Images/menu-button-of-three-horizontal-lines (1).png" class= "openBtn" onclick="openNav()" alt="Menu Button">
+                    <img src="../Images/menu (1).png" class= "openBtn" onclick="openNav()" alt="Menu Button">
     </div>   
     <!-- created content div -->
     <div class="contentContact">
        <!-- created title for content -->
-      <div class="contactTitle">Contact Me</div>
-        
+  
+      <div id="contactTitle">Contact Me</div>
+    
+        <br>
         <br>
         <!-- created form -->
-        <form action="../Pages/Data.html" method="GET">
-            <input type="text" class="contact" placeholder="Name">
-            <br>
-            <input type="text" class="contact" placeholder="Email">
-            <br>
-            <input type="text" class="contact" placeholder="Phone">
-            <br>
-            <input type="text" class="contact message" placeholder="Message">
-            <br>
-            <input type="button" value="Submit" onclick="contactForm()">
+        <form action="form">
+       <p>
+           <!-- used onblur to execute javascript when a user leaves an input field -->
+            <input type="text" id="uname" onblur="validate()" placeholder="Name"> <div id="div1"></div> 
+            
+        </p>
+        <p>
+            <input type="text" onblur="validate()" id="Email" placeholder="Email"> <div id="div2"></div> 
+            
+        </p> 
+        <p>
+                <input type="tel" onblur="validate()" id="pattern" placeholder="Phone Number" required> <div id="div4"></div>
+            
+          
+        </p>
+        <p>
+                <input type="text" onblur="validate()" id="message" placeholder="Message"> <div id="div3"></div>
+           
+        </p>
+             <button><a href="#" id="button" class="button">Submit</a></button>
+            </form> 
             
             
-        </form>
     </div>
     <!-- created footer div -->
-    <div class="footer1">footer</div>
+    <div class="footer1">
+            <h2 id="footer"> &copy; Krazy Koupon Queen. All rights reserved.</h2>
+    </div>
     
 </div>
-
-
+<!-- created modal -->
+<div class="bg-modal">
+    <div class="modal-content">
+        <div class="close">+</div>
+        <!-- picture from https://dribbble.com/shots/2383608-Uploading -->
+        <img src="../Images/upload2.gif" class="upload" alt="uploading image">
+        <div class="modalText">Message Sent</div>
+    </div>
+</div>
 
 
  <script src="../app.js"></script>   
